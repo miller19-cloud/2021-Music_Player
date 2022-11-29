@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+
+  <link rel="stylesheet" type="text/css" href="index.css" />
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+
+<style>
+  .body1 {
+    width: 500px;
+    height: 812px;
+    margin: 0 auto;
+    margin-top: 10%;
+    border: 10px solid #333333;
+    border-radius: 10px;
+    background-image: url(./imgs/bi1.png);
+
+    
+    background-size: cover;
+    background-position: center;
+    /* animation: body 30s linear Infinite; */
+}
+
+.body1:hover{
+    animation: body1 50s linear Infinite;
+}
+@keyframes body1 {
+    0% {
+        background-position: 1980px center;
+    }
+
+    100% {
+        background-position: 20000px center;
+    }
+}
+
+.imgs {
+    height: 40px;
+    flex-flow: row nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.drive{
+    padding-top:800px;
+}
+.drive:hover{
+    animation: motion 0.3s linear 0s infinite alternate;
+}
+        
+@keyframes motion {
+	0% {margin-top: 0px;}
+	100% {margin-top: 10px;}
+}
+
+
+
+.body2 {
+    width: 500px;
+    height: 812px;
+    margin: 0 auto;
+    margin-top: 10%;
+    border: 10px solid #333333;
+    border-radius: 10px;
+    background-image: url(./imgs/bi22.png);
+
+    
+    background-size: cover;
+    background-position: center;
+}
+
+.body2:hover{
+    animation: body2 50s linear Infinite;
+}
+@keyframes body2 {
+    0% {
+        background-position: 250px center;
+    }
+
+    100% {
+        background-position: -20000px center;
+    }
+}
+
+
+.imgs {
+    height: 40px;
+    flex-flow: row nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.run{
+    padding-top:790px;
+    width: 700px;
+
+}
+.run:hover{
+    animation: motion 0.3s linear 0s infinite alternate;
+}
+        
+@keyframes motion {
+	0% {margin-top: 0px;}
+	100% {margin-top: 10px;}
+}
+
+
+
+.body3 {
+    width: 500px;
+    height: 812px;
+    margin: 0 auto;
+    margin-top: 10%;
+    border: 10px solid #333333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+/* .study{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  margin-top: 10%;
+} */
+
+.body4{
+  width: 500px;
+    height: 812px;
+    margin: 0 auto;
+    margin-top: 10%;
+    border: 10px solid #333333;
+    border-radius: 10px;
+    overflow: hidden;
+}
+</style>
+<body>
+  <!-- //헤더 -->
+  <!--<header>
+    <div class="container">LOGO</div>
+  </header>-->
+
+  <section class="firstpage">
+
+    <div class="container">
+      <!-- <div class="lp">
+            <img class="lp1" src="https://images.unsplash.com/photo-1507838153414-b4b713384a76?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80" alt="" width="500px" height="500px">
+        </div> -->
+
+     
+      <div class="list">
+
+        <a id="img1" href="play.html?mode=list1">
+          <div class="overlay">
+            <div class="body1">
+              <div class="imgs">
+                  <img class="drive" src="./imgs/bi2.png" width="500">
+              </div>
+          </div>
+            <!-- <h2>Title 1</h2>
+            <p>내용을 입력하세요.</p> -->
+          </div>
+        </a>
+
+        <a id="img2" href="play.html?mode=list2">
+          <div class="overlay">
+            <div class="body2">
+              <div class="imgs">
+                  <img class="run" src="./imgs/run.png" onmouseover="this.src='./imgs/bi21.gif'" onmouseout="this.src='./imgs/run.png'">
+              </div>
+          </div>
+            <!-- <h2>Title 2</h2>
+            <p>내용을 입력하세요.</p> -->
+          </div>
+        </a>
+
+        <a id="img3" href="play.html?mode=list3">
+          <div class="overlay">
+            <div class="imgs">
+              <div class="body3">
+                <div class="imgs">
+                    <img class="study" src="./imgs/study2.jpg" onmouseover="this.src='./imgs/study.gif'" onmouseout="this.src='./imgs/study2.jpg'">
+                </div>
+            </div>
+            </div>
+            <!-- <h2>Title 3</h2>
+            <p>내용을 입력하세요.</p> -->
+          </div>
+        </a>
+
+        <a id="img4" href="play.html?mode=list4">
+          <div class="overlay">
+            <div class="body4">
+              <div class="imgs">
+              <img src="./imgs/sleep.png" onmouseover="this.src='./imgs/sleep.gif'" onmouseout="this.src='./imgs/sleep.png'">
+            </div>
+          </div>
+            <!-- <h2>Title 4</h2>
+            <p>내용을 입력하세요.</p> -->
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>

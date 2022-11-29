@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Weather App</title>
+    <style>
+    </style>
+
+    <link rel ="stylesheet" href="teststylesheet.css"> 
+    <!-- fontawsome -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css'>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap'><link rel="stylesheet" href="./style.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- 시간설정 라이브러리 로딩 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+        integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<style>
+
+.body {
+    width: 500px;
+    height: 812px;
+    margin: 0 auto;
+    margin-top: 10%;
+    border: 10px solid #333333;
+    border-radius: 10px;
+    background-image: url(./imgs/bi1.png);
+
+    
+    background-size: cover;
+    background-position: center;
+    /* animation: body 30s linear Infinite; */
+}
+
+.body:hover{
+    animation: body 30s linear Infinite;
+}
+@keyframes body {
+    0% {
+        background-position: 1980px center;
+    }
+
+    100% {
+        background-position: 10000px center;
+    }
+}
+
+.drive{
+      
+}
+
+.imgs {
+    height: 40px;
+    flex-flow: row nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.drive{
+    padding-top:800px;
+}
+.drive:hover{
+    animation: motion 0.3s linear 0s infinite alternate;
+}
+        
+@keyframes motion {
+	0% {margin-top: 0px;}
+	100% {margin-top: 10px;}
+}
+</style>
+<body>
+    <div class="body">
+        <div class="imgs">
+            <img class="drive" src="./imgs/bi2.png" width="500">
+        </div>
+    </div>
+</body>
+
+</html>

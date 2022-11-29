@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>backgroundtest</title>
+    <style>
+    </style>
+
+</head>
+<style>
+
+.body {
+    width: 500px;
+    height: 812px;
+    margin: 0 auto;
+    margin-top: 10%;
+    border: 10px solid #333333;
+    border-radius: 10px;
+    background-image: url(./imgs/bi1.png);
+
+    
+    background-size: cover;
+    background-position: center;
+    /* animation: body 30s linear Infinite; */
+}
+
+.body:hover{
+    animation: body 50s linear Infinite;
+}
+@keyframes body {
+    0% {
+        background-position: 1980px center;
+    }
+
+    100% {
+        background-position: 20000px center;
+    }
+}
+
+.imgs {
+    height: 40px;
+    flex-flow: row nowrap;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.drive{
+    padding-top:800px;
+}
+.drive:hover{
+    animation: motion 0.3s linear 0s infinite alternate;
+}
+        
+@keyframes motion {
+	0% {margin-top: 0px;}
+	100% {margin-top: 10px;}
+}
+</style>
+<body>
+    <div class="body">
+        <div class="imgs">
+            <img class="drive" src="./imgs/bi2.png" width="500">
+        </div>
+    </div>
+</body>
+
+</html>

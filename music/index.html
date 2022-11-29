@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>index</title>
+
+  <link rel="stylesheet" type="text/css" href="index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+</head>
+
+
+<style>
+.run{
+  position: absolute;
+  width:500px;
+  padding-top:100px;
+  z-index: 4;
+  
+}
+
+.drive{
+  position: absolute;
+  align-items: center;
+  width:700px;
+  z-index: 4;
+  padding-left: 0;
+  margin-left: 0;
+ overflow: hidden;
+}
+
+</style>
+<body>
+
+  <section class="firstpage">
+
+    <div class="container">
+
+      <div class="list">
+
+        <div>
+          <img class="logo" src="./img/logo.png">
+        </div>
+
+        <a id="img1" href="play.html?mode=list1">
+          <img class="run" src="./imgs/run.png" onmouseover="this.src='./imgs/bi21.gif'" onmouseout="this.src='./imgs/run.png'">
+          <div class="overlay">
+            <h2>Exercies</h2>
+          </div>
+        </a> 
+
+        <a id="img2" href="play.html?mode=list2">
+          <div class="overlay"> 
+            <h2>Study</h2>
+          </div>
+        </a>
+
+        <a id="img3" href="play.html?mode=list3">
+          <img class="drive" src="./imgs/bi2.png" width="500">
+          <div class="overlay">
+            <h2>Drive</h2>
+          </div>
+        </a>
+
+        <a id="img4" href="play.html?mode=list4">
+          <div class="overlay">
+            <h2>Sleep</h2>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </section>
+
+  <script src="index.js"></script>
+
+</body>
+
+</html>
